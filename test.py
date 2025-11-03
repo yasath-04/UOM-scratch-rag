@@ -23,7 +23,6 @@ todos = {
 def index() -> dict[str, dict[int, Todo]]:
     return {"todos": todos}
 
-'''
 @app.get('/todos/{todo_id}')
 def get_todo_by_id(todo_id: int) -> Todo:
-    return todos[todo_id]'''
+    return todos[todo_id]
